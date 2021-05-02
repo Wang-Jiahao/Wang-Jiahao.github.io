@@ -139,22 +139,22 @@
         I am actively collaborating with industry partners and have done several projects in Huawei Technology including designing Efficient GAN and Transformers on edge devices by NAS or Adder operations. Currently, I am working on the <a href="https://arxiv.org/abs/1912.13200"> AdderNet</a> project, which aims to develop a series of deep learning models (CNN, Transformer, SISR models, etc.) using only additions (<a href="https://www.reddit.com/r/MachineLearning/comments/ekw2s1/r_addernet_do_we_really_need_multiplications_in/">Discussions on Reddit</a>).
     </p>
 
-        <h4><li>GhostNet on MindSpore: SOTA Lightweight CV Networks</li></h4>
-        <img style="width:96%;" src="images/GhostNet.png"> 
+        <h4><li>Adder Transformer: Implementing Energy Efficient Transformer with Only Additions</li></h4>
+        <img style="width:96%;" src="images/addertransformerpro.PNG"> 
         <p class="w3-justify">
         <a style="color: #447ec9" href="https://live.huawei.com/huaweiconnect/meeting/cn/5872.html">Huawei Connect (HC) 2020</a> | <a style="color: #447ec9" href="https://www.mindspore.cn/resources/hub">MindSpore Hub</a>
         </p>
         <p class="w3-justify">
-        The initial verison of GhostNet was accepted by CVPR 2020, which achieved SOTA performance on ImageNet: <span style="color:red">75.7%</span> top1 acc with only <span style="color:red">226M FLOPS</span>. In the current version, we release a series computer vision models (e.g. int8 quantization, detection, and larger networks) on <strong>MindsSpore 1.0</strong> and <strong>Mate 30 Pro (Kirin 990)</strong>.
+        The idea of AdderNet was first proposed at Huawei Noah's Ark Lab and was accepted by CVPR 2020 as an Oral Presentation. By replacing all convolutional layers (except the first and the last layers), AdderNet now can obtain comparable performance on ResNet architectures. This project studies implementing <span style="color:red">transformers</span> using cheap addition operation. We provide a general adder linear transformation and adder self-attention mechanism with carefully designed back-propagation approach to replace the traditional multiplication version in FFN and MHSA in Transformers. The results are quite encouraging, we can reduce both <strong>the energy consumption and the circuit  areas</strong> significantly without affecting the performance. 
         </p> 
 
-        <h4><li>AI on Ascend: Real-Time Video Style Transfer</li></h4>
-        <img style="width:32%;" src="images/atlas200.png"> &nbsp&nbsp <img style="width:60%;" src="images/video.png">
+        <h4><li>CF-GAN: Efficient Generative Adversarial Networks</li></h4>
+        <img style="width:60%;" src="images/CFGANpro.PNG"> &nbsp&nbsp <img style="width:32%;" src="images/CF-GANpro.JPG">
         <p class="w3-justify">
-        <a style="color: #447ec9" href="https://www.huaweicloud.com/intl/en-us/HDC.Cloud.html">Huawei Developer Conference (HDC) 2020</a> | <a style="color: #447ec9" href="https://developer.huaweicloud.com/exhibition/Atlas_neural_style.html">Online Demo</a>
-    	  </p>
+        <a style="color: #447ec9" href="https://arxiv.org/abs/1912.13200">[Paper]</a>
+        </p>
         <p class="w3-justify">
-        This project aims to develop a video style transfer system on the <strong>Huawei Atlas 200 DK AI developer Kit</strong>. The latency of the original model for processing one image is about <span style="color:red">630ms</span>. After accelerating it using our method, the lantency now is about <span style="color:red">40ms</span>. 
+        This project studies the neural architecture search (NAS) problem for developing efficient generator networks. We first discover an intact search space of generator networks including three dimensionalities, i.e., path, operator, channel for fully excavating the network performance. To reduce the huge search cost, we explore a coarse-to-fine search strategy which divides the overall search process into three sub-optimization problems accordingly. In addition, a fair supernet training approach is utilized to ensure that all sub-networks can be updated fairly and stably. Experiments results on benchmarks show that we can provide generator networks with better image quality and lower computational costs over the state-of-the-art methods.
         </p>  
 
   </div>
