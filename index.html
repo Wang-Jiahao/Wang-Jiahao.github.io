@@ -149,10 +149,19 @@
         The idea of AdderNet was first proposed at Huawei Noah's Ark Lab and was accepted by CVPR 2020 as an Oral Presentation. By replacing all convolutional layers (except the first and the last layers), AdderNet now can obtain comparable performance on ResNet architectures. This project studies implementing <span style="color:red">Transformers</span> using cheap addition operation. We provide a general adder linear transformation and adder self-attention mechanism with carefully designed back-propagation approach to replace the traditional multiplication version in FFN and MHSA in Transformers. The results are quite encouraging, we can reduce both <strong>the energy consumption and the circuit  areas</strong> significantly without affecting the performance. 
         </p>  -->
 
+        <h4><li>SimDeblur: an open source framework for image and video deblurring</li></h4>
+        <img style="width:96%;" src="images/simdeblur.gif"> 
+        <p class="w3-justify">
+        <a style="color: #447ec9" href="https://github.com/ljzycmd/SimDeblur">[code]</a>
+        </p>
+        <p class="w3-justify">
+        <span style="color:blue">SimDeblur</span> (Simple Deblurring) is an open source framework for image and video deblurring toolbox based on <span style="color:orange">PyTorch</span>, which contains most Deep-Learning based SOTA deblurring algorithms, including MSCNN, SRN, DeblurGAN, EDVR, etc with a Distributed Data Parallel training technique. It is easy to implement your own <span style="color:darkgreen">image</span> or <span style="color:red">video</span> deblurring or other restoration algorithms. I did the open-source job together with my partner <strong>Mingdeng Cao</strong>. 
+        </p>  
+
         <h4><li>CF-GAN: Efficient Generative Adversarial Networks</li></h4>
         <img style="width:96%;" src="images/CFGANpro.PNG"> 
         <p class="w3-justify">
-        <a style="color: #447ec9" href="https://arxiv.org/abs/1912.13200">[Paper]</a>
+        <a style="color: #447ec9" href="https://arxiv.org/pdf/2104.09223.pdf">[Paper]</a>
         </p>
         <p class="w3-justify">
         This project studies the neural architecture search (NAS) problem for developing efficient generator networks for image translation and super resolution tasks. We first discover an intact search space of generator networks including three dimensionalities, i.e., <strong>path, operator, channel</strong> for fully excavating the network performance. To reduce the huge search cost, we explore a <span style="color:red">coarse-to-fine search strategy</span> which divides the overall search process into three sub-optimization problems accordingly. In addition, a <strong>fair supernet training approach</strong> is utilized to ensure that all sub-networks can be updated fairly and stably. Experiments results on benchmarks show that we can provide generator networks with better image quality and lower computational costs over the state-of-the-art methods.
@@ -175,7 +184,7 @@
     <h4> Conference Papers:</h4>
 
     <ol>
-						       
+					       
       <p>
       <li><strong>Adder Attention for Vision Transformer</strong>
       <br>
@@ -213,7 +222,13 @@
       <h4> Journal Papers:</h4>
 
       <ol>
-
+      <p>
+      <li><strong>Binary Chimp Optimization Algorithm (BChOA): A new binary meta-heuristic for solving optimization problems</strong>
+      <br>
+      <strong>Jiahao Wang</strong> et al.
+      <br>
+      <em>Cognitive Computation</em> 2021 | Under Review
+      </p>
 
       </ol>
 
@@ -278,7 +293,7 @@
   <div class="w3-container w3-padding-32" id="blogs">
     <h2>My Blogs</h2>
     <p class="w3-justify">
-        I have published hundreds of machine learning-related blogs on the Zhihu platform, aiming to provide a comprehensive and detailed interpretation of the classic work and the latest work in the field. Any form of business, academic cooperation and exchanges are welcome. Drop me an email for collaboration.
+        I have published hundreds of ML-related blogs on the Zhihu platform, aiming to provide a comprehensive and detailed interpretation of the classic work and the latest work in the field. Any form of business, academic cooperation and exchanges are welcome. Drop me an email for collaboration.
     </p>
 
         <h4><li>Vision Transformer & MLP Series</li></h4>
